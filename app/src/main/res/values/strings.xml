@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CryptoApp</string>
+    <string name="btc_eur">BTC / EUR</string>
+    <string name="value_of_thousand">1000</string>
+    <string name="date_2022_01_01">2022.01.01</string>
+    <string name="coin_image">coin_image</string>
+    <string name="symbols_template">%s / %s</string>
+    <string name="last_update">Last update: %s</string>
+    <string name="price_0">Price: 0</string>
+</resources>

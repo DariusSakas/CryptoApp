@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        app:cardUseCompatPadding="true"
+        android:layout_margin="4dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    >
+        <ImageView
+                android:id="@+id/ivCoinIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_margin="8dp"
+                android:src="@mipmap/ic_launcher"
+                android:contentDescription="@string/coin_image"/>
+        <TextView
+                android:id="@+id/tvSymbols"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="@dimen/padding_8dp"
+                android:textSize="@dimen/textSize16sp"
+                android:textColor="@color/black"
+                android:text="@string/btc_eur"
+        />
+        <TextView
+                android:id="@+id/tvCoinPrice"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tvSymbols"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="@dimen/padding_8dp"
+                android:textSize="@dimen/textSize16sp"
+                android:textColor="@color/black"
+                android:text="@string/value_of_thousand"
+        />
+        <TextView
+                android:id="@+id/tvLastUpdate"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tvCoinPrice"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="@dimen/padding_8dp"
+                android:textSize="@dimen/textSize16sp"
+                android:textColor="@color/black"
+                android:text="@string/date_2022_01_01"
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
